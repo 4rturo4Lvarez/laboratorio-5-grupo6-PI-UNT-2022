@@ -10,10 +10,8 @@ Cant_num, Cant_nulos, Sum_negat, Num, Prod_posit = 0, 0, 0, 0, 1
 
 Cant_num = int(input("Ingrese la cantidad de números del conjunto A: "))
 
-print("\n")
-
 for i in range (Cant_num):
-    print("Ingrese el número ", i + 1, ": "); Num = int(input("----> "))
+    print(f"Ingrese el número {int(i + 1)}: "); Num = int(input("----> "))
     
     if Num < 0:
         Sum_negat = Num + Sum_negat
@@ -26,6 +24,6 @@ for i in range (Cant_num):
 
 print("\n")
 
-print("1) La sumatoria de los valores negativos no nulos de A es: ", Sum_negat)
-print("2) El producto de los valores positivos no nulos es: ", Prod_posit)
-print("3) Porcentaje de valores de A nulos es: ", int(Cant_nulos/Cant_num*100), "%")
+print(f"1) La sumatoria de los valores negativos no nulos de A es {Sum_negat}.")
+print(f"2) El producto de los valores positivos no nulos es {Prod_posit}.")
+print(f"3) Porcentaje de valores de A nulos es: {int(Cant_nulos/Cant_num*100)}%.")

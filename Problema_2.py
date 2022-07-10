@@ -9,21 +9,41 @@ import numpy as np
 
 Pares_conj = int(input("Ingrese la cantidad de pares de valores X1 y X2 que se evaluarán: "))
 
+#Creación del array donde se almacenarán los datos usando numpy:
 array_a = np.zeros(2*Pares_conj)
 
 v = array_a.reshape(Pares_conj,2)
 
+#Ingreso de datos:
 for i in range(Pares_conj):
-
     print(f"A continuación ingrese los valores del par {i+1}:")
 
     for j in range(2):
         print(f"El valor de X{j+1}:"); v[i,j] = int(input("----> "))
                 
+#Cálculo de la media aritmética y geométrica:
 med_arit = (v[:,0] + v[:,1])/2
 
 med_geo = (v[:,0] * v[:,1])**(1/2)
 
-array_b = np.zeros(3*Pares_conj)
+#Código para que los datos se muestren en una tabla:
+lineas = "+------------+------------+------------+------------+"
+print(lineas)
+print("|     X1     |     X2     |  P. Arit.  |  P. Geom.  |")
+print(lineas)
 
-u = array_b.reshape(Pares_conj,4)
+for i in range(Pares_conj):   
+    fila = "|{:^12.2f}|{:^12.2f}|{:^12.2f}|{:^12.2f}|".format(v[i,0], v[i,1], med_arit[i], med_geo[i])
+    print(fila)
+    print(lineas)
+
+#Cálculo del porcentaje de veces que el promedio es menor que la media geométrica:
+contador = 0
+
+for i in range(Pares_conj):
+    if med_arit[i] < med_geo[i]:
+        contador = contador + 1
+
+porcentaje = (contador/Pares_conj)*100
+
+print(f"El porcentaje de veces que el promedio es menor que la media geométrica será de {porcentaje}%.")
