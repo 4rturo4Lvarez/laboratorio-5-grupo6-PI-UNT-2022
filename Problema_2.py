@@ -1,9 +1,11 @@
 #======================================================================================================
-#Dado un conjunto de pares de valores X1 y X2, donde ambos son valores positivos
-#no nulos, desarrolle un programa en Python que determine e imprima:
-# 1) El promedio de X1 y X2
-# 2) La media geométrica de X1 y X2, sabiendo que la media geométrica se calcula como (X1*X2)**(1/2)
-# 3) Porcentaje de veces que el promedio es menor que la media geométrica
+# Dado un conjunto de pares de valores X1 y X2, donde ambos son valores positivos
+# no nulos, desarrolle un programa en Python que determine e imprima:
+# 1) El promedio de X1 y X2.
+# 2) La media geométrica de X1 y X2, sabiendo que la media geométrica se calcula como (X1*X2)**(1/2).
+# 3) Porcentaje de veces que el promedio es menor que la media geométrica.
+# 4) El primer par de valores de X1 y X2 donde el promedio es igual a la media
+#    geométrica.
 #======================================================================================================
 import numpy as np
 
@@ -47,3 +49,11 @@ for i in range(Pares_conj):
 porcentaje = (contador/Pares_conj)*100
 
 print(f"El porcentaje de veces que el promedio es menor que la media geométrica será de {porcentaje}%.")
+
+# Uso de las funciones for y while para el item 4)
+contador = 0
+
+for i in range(Pares_conj):
+    if med_arit[i] == med_geo[i]:
+        print(f"El primer par de valores donde el promedio es igual a la media geométrica es X1 = {v[i,0]} y X2 = {v[i,1]}")
+        break
