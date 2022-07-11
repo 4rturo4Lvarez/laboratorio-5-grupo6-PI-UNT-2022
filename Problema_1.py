@@ -1,9 +1,9 @@
 #==============================================================================
 # Dado un conjunto A que contiene N valores, positivos, negativos o nulos,
 # desarrolle un programa en Python que determine e imprima:
-# 1) La sumatoria de los valores negativos no nulos de A
-# 2) El producto de los valores positivos no nulos
-# 3) Porcentaje de valores de A nulos.
+#  1) La sumatoria de los valores negativos no nulos de A
+#  2) El producto de los valores positivos no nulos
+#  3) Porcentaje de valores de A nulos.
 #==============================================================================
 
 Cant_nulos, Sum_negat, Prod_posit = 0, 0, 1
