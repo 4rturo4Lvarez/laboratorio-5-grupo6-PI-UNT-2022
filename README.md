@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f98c7fa (README agregado)
 Universidad Nacional de Trujillo
 
 Facultad de Ingeniería
@@ -18,6 +22,15 @@ Integrantes:
 
 -MUÑOZ VEGA, Luis Enrique
 
-LABORATORIO III
+<<<<<<< HEAD
+LABORATORIO V
 
-TRUJILLO-PERÚ-2022[A[A[D[D[D[V[B[B[C[C[C[C[C[C
+TRUJILLO-PERÚ-2022
+=======
+
+>>>>>>> cb8f7bd (Update README.md)
+=======
+LABORATORIO I
+
+TRUJILLO-PERÚ-2022
+>>>>>>> f98c7fa (README agregado)
