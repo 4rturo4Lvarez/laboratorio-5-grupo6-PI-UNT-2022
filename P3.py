@@ -14,12 +14,12 @@ P=[]
 #Se almacenan los datos
 for n in range(alumnos):
     nombre=input(f'Ingresar nombre de alumno {n+1}: ')
-    promedio=int(input(f'Ingresar promedio de {nombre}: '))
+    promedio=float(input(f'Ingresar promedio de {nombre}: '))
     N.append(nombre)
     P.append(promedio)
 
 #~~~~ORDENACION POR BURBUJA~~~~
-    #Bucle a reorrer
+    #Bucle a recorrer
 for i in range(0, alumnos-1):
     #comparaciones e intercambios
     for j in range(0, alumnos-1):
